@@ -4,6 +4,7 @@ import json
 import logging
 import os
 
+import fire
 import requests
 from bs4 import BeautifulSoup
 
@@ -105,4 +106,5 @@ def to_md_files(username, total_pages, cookie_file, start=1, stop=None, jekyll=T
 
 
 if __name__ == '__main__':
-    to_md_files('jiajiezhuo', 3, 'cookies.txt', 1, 4, True, './mdfiles')
+    fire.Fire(to_md_files)
+    # to_md_files('jiajiezhuo', 3, 'cookies.txt', 1, 4, True, './mdfiles')
