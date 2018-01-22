@@ -86,7 +86,7 @@ def to_md_files(username, total_pages, cookie_file, start=1, stop=None, jekyll=T
 
             jekyll_str = ''
             if jekyll:
-                jekyll_str = '---\nlayout: post\ntitle: {title}\ndate: {date}\ncategories: {categories}\n---\n\n'.format(title=title, date=date, categories=categories)
+                jekyll_str = '---\nlayout: post\ntitle: {title}\ndate: {date}\ncomment: True\ncategories: {categories}\n---\n\n'.format(title=title, date=date, categories=categories)
             
             # forbidden characters
             forbidden = ['\\', '/', ':', '*', '?', '"', '<', '>', '|']
