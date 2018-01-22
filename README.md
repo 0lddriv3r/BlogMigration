@@ -8,5 +8,6 @@
 2. 登录自己的 csdn 博客，把 cookies 复制到 `cookies.txt` 文件里。
 3. 使用**Fire**命令行工具`python csdn2md.py username total_pages cookies_file start stop jekyll md_dir`（后四个有默认参数）。
 4. 使用**Fire**命令行工具`python create_category_pages.py github_pages_dir`通过博客的分类自动创建分类分页的默认页面。
+5. 使用**Fire**命令行工具`python create_blog.py blog_name category`自动创建博客模板。
 
 *注：该导出程序对于markdown和非markdown格式博客文件均可。*
